@@ -15,11 +15,16 @@ class NightmareAll extends Helper {
     * Go to a given page, and store the response on the borwser object for later reference
     */
     customAmOnPage(url, headers) {
+
         // let's use chai assertion library
         let expect = require('chai').expect;
 
         // get nightmare instance
         let browser = this.helpers['Nightmare'].browser;
+
+        if (url.indexOf('http') !== 0) {
+            url = browser.options.url + url;
+        }
 
         return browser.goto(url, headers).then((res) => {
             //Store results on the current browser object, giving us access to response code etc.
@@ -37,22 +42,6 @@ class NightmareAll extends Helper {
 
         expect(browser.currentPageResponse.code).to.equal(expectedValue);
     }
-
-    // getServerResponseCode(url, expectedValue) {
-    //     // let's use chai assertion library
-    //     let expect = require('chai').expect;
-    //
-    //     // get nightmare instance
-    //     let browser = this.helpers['Nightmare'].browser;
-    //
-    //
-    //
-    //     return browser.goto(url).then(function(res) {
-    //         //assert.equal(res.code, expectedValue);
-    //         expect(res.code).to.equal(expectedValue);
-    //
-    //     });
-    // }
 
 }
 

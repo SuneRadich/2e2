@@ -4,7 +4,9 @@
   "description": "Testing end2end, test tools",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-node spec"
+    "old-test": "jasmine-node spec",
+    "test": "codeceptjs run",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

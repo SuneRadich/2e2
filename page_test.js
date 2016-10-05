@@ -3,15 +3,21 @@ Feature('Testing pages');
 
 Scenario('Test for response 200', (I) => {
 
-    //let url = 'http://localhost:3000';
-    let url = 'http://implementconsultinggroup.com';
-
-    //I.getServerResponseCode(url, 200);
-
-    I.customAmOnPage(url);
-
+    I.customAmOnPage('/page200');
     I.getServerResponseCode(200);
-    I.seeInTitle('Management consulting | Implement Consulting Group');
 
+});
+
+Scenario('Test for response 404', (I) => {
+
+    I.customAmOnPage('/page404');
+    I.getServerResponseCode(404);
+
+});
+
+Scenario('Test for response 500', (I) => {
+
+    I.customAmOnPage('/page500');
+    I.getServerResponseCode(500);
 
 });

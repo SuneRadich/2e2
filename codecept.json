@@ -6,7 +6,7 @@
     "Nightmare": {
       "url": "http://localhost:3000",
       "browser": "chrome",
-      "show": true
+      "show": false
     },
     "NightmareAll": {
       "require": "./nightmareall_helper.js"
