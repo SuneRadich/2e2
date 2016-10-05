@@ -3,13 +3,14 @@ var app = express();
 
 var exports = module.exports = {};
 
-app.get('/', function(req, res){
-  res.send('Hello World');
+app.get('/page200', function(req, res){
+    res.status(200);
+    res.send('Page with response code 200');
 });
 
 app.get('/page404', function(req, res) {
     res.status(404);
-    res.send('Err');
+    res.send('Err 404');
 });
 
 app.get('/page500', function(req, res) {
