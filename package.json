@@ -1,0 +1,31 @@
+{
+  "name": "end2end",
+  "version": "1.0.0",
+  "description": "Testing end2end, test tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuneRadich/2e2.git"
+  },
+  "author": "Sune Radich Vestergaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuneRadich/2e2/issues"
+  },
+  "homepage": "https://github.com/SuneRadich/2e2#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "codeceptjs": "^0.4.6",
+    "express": "^4.14.0",
+    "express-generator": "^4.13.4",
+    "jasmine": "^2.5.2",
+    "jasmine-expect": "^3.0.1",
+    "jasmine-node": "^1.14.5",
+    "nightmare": "^2.7.0",
+    "nightmare-upload": "^0.1.1",
+    "request": "^2.75.0"
+  }
+}
