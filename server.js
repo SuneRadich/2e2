@@ -3,7 +3,7 @@ var app = express();
 
 var exports = module.exports = {};
 
-app.get('/page200', function(req, res){
+app.get('/page200', function(req, res) {
     res.status(200);
     res.send('Page with response code 200');
 });
@@ -18,10 +18,16 @@ app.get('/page500', function(req, res) {
     res.send('Server error');
 });
 
-var server = app.listen(3000, function(){
-  console.log('Magic is happening on port 3000');
-});
+var server;
 
-exports.closeServer = function(){
-  server.close();
+exports.start = function() {
+    server = app.listen(3000, function() {
+        console.log('Starting mock webserver on port 3000')
+    });
+};
+
+
+exports.close = function() {
+    console.log('Closing mock webserver')
+    server.close();
 };

@@ -1,6 +1,16 @@
 
 Feature('Testing pages');
 
+let server = require('./server');
+
+AfterSuite((I) => {
+    server.close();
+});
+
+BeforeSuite((I) => { // or Background
+    server.start();
+});
+
 Scenario('Test for response 200', (I) => {
 
     I.customAmOnPage('/page200');
@@ -19,5 +29,4 @@ Scenario('Test for response 500', (I) => {
 
     I.customAmOnPage('/page500');
     I.getServerResponseCode(500);
-
 });
