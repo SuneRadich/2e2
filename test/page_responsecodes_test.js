@@ -6,12 +6,12 @@ Feature('Testing page response codes');
 //Require the mock Express server
 let server = require('./../server');
 
-AfterSuite((I) => {
-    server.close();
-});
-
 BeforeSuite((I) => { // or Background
     server.start();
+});
+
+AfterSuite((I) => {
+    server.close();
 });
 
 Scenario('Response code 200', (I) => {
