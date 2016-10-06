@@ -1,35 +1,18 @@
 
 "use strict";
 
-Feature('Testing page response codes');
+Feature('Testing');
 
-//Require the mock Express server
-let server = require('./../server');
-
-BeforeSuite((I) => { // or Background
-    server.start();
+BeforeSuite((I) => {
+    //Stuff to do before running tests
 });
 
 AfterSuite((I) => {
-    server.close();
+    //Stuff to do after running tests
 });
 
-Scenario('Response code 200', (I) => {
+Scenario('Something', (I) => {
 
-    I.customAmOnPage('/page200');
-    I.getServerResponseCode(202);
+    //Do tests
 
-});
-
-Scenario('Response code 404', (I) => {
-
-    I.customAmOnPage('/page404');
-    I.getServerResponseCode(404);
-
-});
-
-Scenario('Response code 500', (I) => {
-
-    I.customAmOnPage('/page500');
-    I.getServerResponseCode(500);
 });

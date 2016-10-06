@@ -16,10 +16,6 @@
     "I": "./steps_file.js"
   },
   "bootstrap": false,
-  "mocha": {
-      "reporterOptions": {
-        "mochaFile": "output/result.xml"
-    }
-  },
-  "name": "End2End"
+  "mocha": {},
+  "name": "UITesting"
 }

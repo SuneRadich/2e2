@@ -1,20 +1,12 @@
 {
-    "name": "codeceptjs-demo",
+    "name": "codeceptjs-boilerplate",
     "version": "1.0.0",
-    "description": "Testing end2end, test tools",
+    "description": "Run UI tests using CodeceptJS",
     "scripts": {
         "test": "codeceptjs run",
         "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/1508/codeceptjs-demo.git"
-    },
-    "author": "Sune Radich Vestergaard",
-    "bugs": {
-        "url": "https://github.com/1508/codeceptjs-demo/issues"
-    },
-    "homepage": "https://github.com/1508/codeceptjs-demo#readme",
+    "author": "1508",
     "devDependencies": {
         "chai": "^3.5.0",
         "codeceptjs": "^0.4.6",
