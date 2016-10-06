@@ -1,5 +1,5 @@
 {
-    "name": "CodeceptJS Demo",
+    "name": "codeceptjs-demo",
     "version": "1.0.0",
     "description": "Testing end2end, test tools",
     "scripts": {
