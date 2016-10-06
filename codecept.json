@@ -9,13 +9,17 @@
       "show": false
     },
     "NightmareAll": {
-      "require": "./nightmareall_helper.js"
+      "require": "./nightmarecustom_helper.js"
     }
   },
   "include": {
     "I": "./steps_file.js"
   },
   "bootstrap": false,
-  "mocha": {},
+  "mocha": {
+      "reporterOptions": {
+        "mochaFile": "output/result.xml"
+    }
+  },
   "name": "End2End"
 }

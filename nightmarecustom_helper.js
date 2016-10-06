@@ -1,6 +1,6 @@
 'use strict';
 
-class NightmareAll extends Helper {
+class NightmareCustom extends Helper {
 
     // before/after hooks
     _before() {
@@ -45,4 +45,4 @@ class NightmareAll extends Helper {
 
 }
 
-module.exports = NightmareAll;
+module.exports = NightmareCustom;
