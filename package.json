@@ -4,7 +4,7 @@
     "description": "Testing end2end, test tools",
     "scripts": {
         "test": "codeceptjs run --reporter mocha-teamcity-reporter || true",
-        "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter || test"
+        "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter || true"
     },
     "repository": {
         "type": "git",
