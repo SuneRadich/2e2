@@ -1,29 +1,27 @@
 {
-  "name": "end2end",
-  "version": "1.0.0",
-  "description": "Testing end2end, test tools",
-  "main": "index.js",
-  "scripts": {
-    "test": "codeceptjs run",
-    "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SuneRadich/2e2.git"
-  },
-  "author": "Sune Radich Vestergaard",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SuneRadich/2e2/issues"
-  },
-  "homepage": "https://github.com/SuneRadich/2e2#readme",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "codeceptjs": "^0.4.6",
-    "express": "^4.14.0",
-    "mocha-teamcity-reporter": "^1.1.1",
-    "nightmare": "^2.7.0",
-    "nightmare-upload": "^0.1.1",
-    "request": "^2.75.0"
-  }
+    "name": "CodeceptJS Demo",
+    "version": "1.0.0",
+    "description": "Testing end2end, test tools",
+    "scripts": {
+        "test": "codeceptjs run",
+        "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/1508/codeceptjs-demo.git"
+    },
+    "author": "Sune Radich Vestergaard",
+    "bugs": {
+        "url": "https://github.com/1508/codeceptjs-demo/issues"
+    },
+    "homepage": "https://github.com/1508/codeceptjs-demo#readme",
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "codeceptjs": "^0.4.6",
+        "express": "^4.14.0",
+        "mocha-teamcity-reporter": "^1.1.1",
+        "nightmare": "^2.7.0",
+        "nightmare-upload": "^0.1.1",
+        "request": "^2.75.0"
+    }
 }
