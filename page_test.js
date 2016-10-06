@@ -4,6 +4,7 @@
 
     Feature('Testing pages');
 
+    //Require the mock Express server
     let server = require('./server');
 
     AfterSuite((I) => {
