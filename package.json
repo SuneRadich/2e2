@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "Testing end2end, test tools",
     "scripts": {
-        "test": "codeceptjs run --reporter mocha-teamcity-reporter || true",
-        "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter || true"
+        "test": "codeceptjs run --reporter mocha-teamcity-reporter",
+        "test-teamcity": "codeceptjs run --reporter mocha-teamcity-reporter"
     },
     "repository": {
         "type": "git",
