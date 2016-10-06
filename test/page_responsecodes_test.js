@@ -17,7 +17,7 @@ AfterSuite((I) => {
 Scenario('Response code 200', (I) => {
 
     I.customAmOnPage('/page200');
-    I.getServerResponseCode(200);
+    I.getServerResponseCode(202);
 
 });
 
